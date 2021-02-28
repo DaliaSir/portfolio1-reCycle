@@ -62,7 +62,7 @@ h3 {
 .back-to-top {
   font-size: 3rem;
   position: fixed;
-  top: 500px;
+  top: 700px;
   right: 20px;
   z-index: 1;
 }
@@ -337,25 +337,29 @@ footer {
 }
 
 .home_main-intro,
-.tours_main-intro {
+.tours_main-intro,
+.about_main-section--intro {
   background-color: #465959;
   color: #ffffff;
 }
 
 .home_main-intro h1,
 .home_main-intro h2,
-.tours_main-intro h1 {
+.tours_main-intro h1,
+.about_main-section--intro h1 {
   color: #ffffff;
 }
 
 .home_main-intro,
 .tours_main-intro,
-.contact_main-section--intro {
+.contact_main-section--intro,
+.about_main-section--intro {
   padding: 3rem 1.2rem;
 }
 
 .home_main-intro,
-.tours_main-intro {
+.tours_main-intro,
+.about_main-section--intro {
   text-align: center;
 }
 
@@ -445,33 +449,33 @@ footer {
 
 /* -------------------------------- Our guides -------------------------------- */
 
-.home_main-guides {
+.home_main-guides, .about_main-section--guides {
   text-align: center;
   padding: 1rem;
 }
 
-.home_main-guide--wrap {
+.home_main-guide--wrap, .about_main-guide--wrap {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.home_main-guides h2 {
+.home_main-guides h2, .about_main-section--guides h2 {
   text-transform: uppercase;
 }
 
-.home_main-guide {
+.home_main-guide, .about_main-guide {
   line-height: 0.9rem;
   margin: 10px 10px;
 }
 
-.home_main-guide--description {
+.home_main-guide--description, .about_main-guide--description {
   font-size: 1rem;
   max-width: 180px;
   margin: 0 auto;
 }
 
-.home_main-guide--name {
+.home_main-guide--name, .about_main-guide--name {
   font-size: 0.875rem;
   font-weight: 700;
 }
@@ -550,93 +554,102 @@ footer {
 /*------------FORM----------------*/
 
 .contact_main-section--wrapform {
-    background-color: #e1e1e1;
-    text-align: center;
-    padding: 1.5rem;
+  background-color: #e1e1e1;
+  text-align: center;
+  padding: 1.5rem;
 }
 
 .contact_main-section--wrapform h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .contact_main-section--form {
-    margin: 0 auto;
-    font-size: 1.2rem;
-    font-weight: 700;
-    max-width: 720px;
-    border: none;
-    text-align: left;
-  }
-  
-  .contact_form-name,
-  .contact_form-email,
-  .contact_form-select,
-  .contact_form-text {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 0.5rem 0 2rem 0;
-    resize: vertical;
-    display: block;
-    cursor: text;
-    font-size: 1em;
-    font-family: inherit;
-  }
-  
-  .contact_form-text {
-    margin-bottom: 0.8rem;
-  }
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: 700;
+  max-width: 720px;
+  border: none;
+  text-align: left;
+}
 
-  .contact_main-section--form select {
-      color: #696969;
-      cursor: pointer;
-      background-color: #ffffff;
-  }
+.contact_form-name,
+.contact_form-email,
+.contact_form-select,
+.contact_form-text {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0.5rem 0 2rem 0;
+  resize: vertical;
+  display: block;
+  cursor: text;
+  font-size: 1em;
+  font-family: inherit;
+}
 
-  .contact_main-section--form input[type="submit"] {
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-  }
+.contact_form-text {
+  margin-bottom: 0.8rem;
+}
 
-  .form-text-conter {
-     float: right;
-  }
+.contact_main-section--form select {
+  color: #696969;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.contact_main-section--form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.form-text-conter {
+  float: right;
+}
 
 .form-error {
-    display: none;
-    color: #ff0000;
-    font-size: 0.9rem;
-    margin: 0 0 2rem 0;
-  }
-  
-  .form-error-border {
-    border: 1px #ff0000 solid;
-    width: 100%;
-    padding: 12px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 0.5rem 0;
-    resize: vertical;
-    display: block;
-    background-color: #f7f7f7;
-    cursor: text;
-    font-size: 1em;
-    font-family: inherit;
-  }
-  
-  .message {
-    background: #04bf8a;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.2rem;
-    letter-spacing: 0.075rem;
-    padding: 1rem;
-    color: #ffffff;
-    margin-top: 1.5rem;
-  }
+  display: none;
+  color: #ff0000;
+  font-size: 0.9rem;
+  margin: 0 0 2rem 0;
+}
+
+.form-error-border {
+  border: 1px #ff0000 solid;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0.5rem 0;
+  resize: vertical;
+  display: block;
+  background-color: #f7f7f7;
+  cursor: text;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+.message {
+  background: #04bf8a;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.075rem;
+  padding: 1rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+
+/* -------------------------------------------------------------------- ABOUT
+---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.about_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 
@@ -677,7 +690,7 @@ footer {
     font-style: italic;
   }
 
-  .home_main-guide--wrap {
+  .home_main-guide--wrap, .about_main-guide--wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -758,14 +771,16 @@ footer {
   }
 
   .home_main-intro,
-  .tours_main-intro {
+  .tours_main-intro,
+  .about_main-section--intro {
     background-color: #ffffff;
     color: #233333;
   }
 
   .home_main-intro h1,
   .home_main-intro h2,
-  .tours_main-intro h1 {
+  .tours_main-intro h1,
+  .about_main-section--intro h1 {
     color: #233333;
   }
 
@@ -832,10 +847,39 @@ footer {
   }
 
   .contact_main-section--wrapform {
-      min-width: 400px;
+    min-width: 400px;
   }
 
   .contact_main-section--wrapform h2 {
+    margin-top: 0;
+  }
+
+  /*-----------ABOUT---------------*/
+
+  .about_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+  }
+
+  .about_main-section--intro {
+      max-width: 300px;
+      text-align: left;
+      margin-top: 5rem;
+  }
+
+  .about_main-section--image {
+    background-image: url("../images/about-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 720px;
+    width: 400px;
+    padding: 0;
+    opacity: 0.9;
+  }
+
+  .about_main-section--guides h2 {
       margin-top: 0;
   }
 }
