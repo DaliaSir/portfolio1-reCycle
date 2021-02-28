@@ -5,9 +5,9 @@ function getTours () {
     toursList.innerHTML = "";
     toursData.forEach(function (tours) {
       toursList.innerHTML += `
-      <div class="toursCard">
+      <div class="tours_toursCard">
      
-        <div class="image" style="background-image: url(${tours.image});"></div>
+        <div class="tours_tours-image" style="background-image: url(${tours.image});"></div>
         <h2>${tours.name}</h2>
         <p>${tours.description}</p>
         <table>
@@ -33,7 +33,7 @@ function getTours () {
             </tr>
         </table>
         
-        <a href="#" title="Book a Tour">Book</a>
+        <a href="#" title="Book a Tour" class="button">Book</a>
       </div>       
         `;
     })
